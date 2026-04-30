@@ -7,49 +7,6 @@
   --scrollbar-width: 0px;
 }
 
-/* Import all original Next.js CSS files from the mirror */
-@import '/css/a463080343a8b988aae6.css';
-@import '/css/a507e9ad223717c5aae6.css';
-@import '/css/5c05320c2e2712c6aae6.css';
-@import '/css/8e6ddeb204d73c50aae6.css';
-@import '/css/b6b0e4d6e1848150aae6.css';
-@import '/css/33f3cda2aa79f5e3aae6.css';
-@import '/css/4c0c15c47e700f3faae6.css';
-@import '/css/f46e979614fc3394aae6.css';
-@import '/css/76625cdb983d5d00aae6.css';
-@import '/css/e38ee174a6663feaaae6.css';
-@import '/css/6ad1c6d71b80e1dfaae6.css';
-@import '/css/2a2a5a05e6302e39aae6.css';
-@import '/css/c7661fc68b4af3d0aae6.css';
-@import '/css/0cdae0b15642931caae6.css';
-@import '/css/0ef050fd06155c08aae6.css';
-@import '/css/13a7aa8b5e9c64f9aae6.css';
-@import '/css/19ac78074acd9000aae6.css';
-@import '/css/23a81e2004653821aae6.css';
-@import '/css/30b3683e1f99c79caae6.css';
-@import '/css/39eff304cae84232aae6.css';
-@import '/css/448b58ea9519a9d8aae6.css';
-@import '/css/4beeb62387374929aae6.css';
-@import '/css/55189f4d11353ffbaae6.css';
-@import '/css/6b70e9a795aa1a74aae6.css';
-@import '/css/6c7b6a0cc24629d5aae6.css';
-@import '/css/704935a5150163d1aae6.css';
-@import '/css/71fc680ded0e6ed8aae6.css';
-@import '/css/7c487b1d2874cf16aae6.css';
-@import '/css/818f5a3d45211294aae6.css';
-@import '/css/84461aa051d4f5baaae6.css';
-@import '/css/867d8996e7fad194aae6.css';
-@import '/css/88a21f3b75078941aae6.css';
-@import '/css/8c62c763d99988d5aae6.css';
-@import '/css/9944a6ac1d6e2523aae6.css';
-@import '/css/999902d1754ff7cbaae6.css';
-@import '/css/bc7e2285d5c0793caae6.css';
-@import '/css/c3065cf64caf423daae6.css';
-@import '/css/c6884a4b3ac4bd9baae6.css';
-@import '/css/c811f06a1c4fb317aae6.css';
-@import '/css/d578f8b9021f8327aae6.css';
-@import '/css/dc076e2b3091b041aae6.css';
-@import '/css/fac5c2ce875ebfaeaae6.css';
 
 /* Ensure images display as expected */
 [data-nimg="1"] {
