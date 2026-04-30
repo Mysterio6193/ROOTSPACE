@@ -1,12 +1,359 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import MainLayout from '../layouts/MainLayout';
 
-const html = `<div className="about-page_wrapper__g83HR"><section className="about-page_banner__yLmpV"><div className="container_container__v5gtR"><div><div style="visibility:visible" className="about-page_banner-title__qb78x"><h1>About Us</h1></div></div><div style="visibility:visible" className="about-page_banner-subtitle__fIWFi">Our Mission: Moving You Forward in Real Estate</div><div className="about-page_banner-img__QYl9f"><video src="/videos/find-about.mp4" loop="" autoPlay="" muted="" playsInline=""></video></div><div className="about-page_banner-description__7AGDl">At Rootspace, we&#x27;re more than a real estate brokerage; we&#x27;re a movement dedicated to helping our clients and agents move forward. <span className="em">From finding the perfect property to empowering agents to build thriving careers, our mission is simple: make every step in real estate a positive one.</span></div></div></section><section className="about-page_who-we-are__VxGR5"><div className="container_container__v5gtR"><div className="about-page_row__Pw_hA"><div className="about-page_col__EpttX"><div className="about-page_who-we-are-label__sjv4C">Who We Are</div><div className="about-page_who-we-are-particle-img__ptHgP" style="visibility:visible"><img alt="Who We Are" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/08fa0accac8917edbe7d6f66dd3da19be9064b9ca28e.png"/></div></div><div className="about-page_col__EpttX"><div className="about-page_who-we-are-title__ibrq1"><span className="em">Who</span> We Are</div><div className="about-page_who-we-are-img__SL_Px" style="visibility:visible"><img alt="Who We Are" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/7b829344439c9e9e1e917cf4a33ba3d3da560c044989.png"/></div><div className="about-page_who-we-are-description__8MvTZ">Founded on the belief that real estate should be empowering for everyone involved, Rootspace combines innovative tools, a client-centered approach, and an agent-owned <span className="em">model to redefine what a modern brokerage can be. Today, we’re proud to support over 1,000 agents and countless clients on their journeys.</span></div></div></div></div></section><section><div className="container_container__v5gtR"><div className="labeled-section_labeled-section__cCSIG"><div className="labeled-section_label-container__qBH7q"><div className="labeled-section_label__hHJX0"><div className="about-page_section-label__APKJl"><div><span className="em">What</span> Sets</div><div>Rootspace Apart</div></div></div></div><div className="labeled-section_content__XMCAJ"><div className="collapsible_collapsible-mobile__w8_e_"><div className="collapsible_collapsible-mobile__w8_e_"><div className="collapsible_item__VdUU7"><div className="collapsible_trigger__YVdqC" data-index="01"><div>Agent-Owned and Client-Focused</div></div><div className="collapsible_content__3mg0E"><div className="collapsible_content-inner__D62mz">Rootspace is built by agents, for agents, and is designed with clients in mind. As an agent-owned company, our team has a vested interest in your success and fosters an environment of dedication and trust.</div></div></div><div className="collapsible_item__VdUU7"><div className="collapsible_trigger__YVdqC" data-index="02"><div>Certified Agents with Local Expertise</div></div><div className="collapsible_content__3mg0E"><div className="collapsible_content-inner__D62mz">All Rootspace agents complete a thorough certification program that sets them apart as trusted experts in their markets. Whether you’re buying, selling, or renting, our agents offer deep local insights tailored to your goals.</div></div></div><div className="collapsible_item__VdUU7"><div className="collapsible_trigger__YVdqC" data-index="03"><div>Flexible Membership Plans</div></div><div className="collapsible_content__3mg0E"><div className="collapsible_content-inner__D62mz">We’ve replaced traditional commission models with flexible membership plans, giving our agents freedom and stability to deliver an exceptional client experience. This unique approach means our agents are focused on your needs - not just on percentages.</div></div></div><div className="collapsible_item__VdUU7"><div className="collapsible_trigger__YVdqC" data-index="04"><div>Innovative Tools and Technology</div></div><div className="collapsible_content__3mg0E"><div className="collapsible_content-inner__D62mz">Our platform offers advanced tools, analytics, and resources that streamline every real estate process. With Rootspace, you get modern, efficient support backed by technology that keeps your journey simple and smooth.</div></div></div></div></div><div className="collapsible_collapsible-desktop__gk0EQ"><div data-state="closed" className="collapsible_item__VdUU7"><div className="collapsible_trigger__YVdqC" type="button" aria-controls="radix-_R_qdbsnn5tjb_" aria-expanded="false" data-state="closed" data-index="01" title="Agent-Owned and Client-Focused"><div>Agent-Owned and Client-Focused</div><div className="collapsible_trigger-icon__qgUgb"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="3.2rem" height="3.2rem" style="transform:rotate(0deg);transition:transform 0.3s ease-in-out"><path fill="currentColor" d="M21 12a.75.75 0 0 1-.75.75h-7.5v7.5a.75.75 0 1 1-1.5 0v-7.5h-7.5a.75.75 0 1 1 0-1.5h7.5v-7.5a.75.75 0 1 1 1.5 0v7.5h7.5A.75.75 0 0 1 21 12"></path></svg></div></div><div data-state="closed" id="radix-_R_qdbsnn5tjb_" hidden="" className="collapsible_content__3mg0E"></div></div><div data-state="closed" className="collapsible_item__VdUU7"><div className="collapsible_trigger__YVdqC" type="button" aria-controls="radix-_R_1adbsnn5tjb_" aria-expanded="false" data-state="closed" data-index="02" title="Certified Agents with Local Expertise"><div>Certified Agents with Local Expertise</div><div className="collapsible_trigger-icon__qgUgb"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="3.2rem" height="3.2rem" style="transform:rotate(0deg);transition:transform 0.3s ease-in-out"><path fill="currentColor" d="M21 12a.75.75 0 0 1-.75.75h-7.5v7.5a.75.75 0 1 1-1.5 0v-7.5h-7.5a.75.75 0 1 1 0-1.5h7.5v-7.5a.75.75 0 1 1 1.5 0v7.5h7.5A.75.75 0 0 1 21 12"></path></svg></div></div><div data-state="closed" id="radix-_R_1adbsnn5tjb_" hidden="" className="collapsible_content__3mg0E"></div></div><div data-state="closed" className="collapsible_item__VdUU7"><div className="collapsible_trigger__YVdqC" type="button" aria-controls="radix-_R_1qdbsnn5tjb_" aria-expanded="false" data-state="closed" data-index="03" title="Flexible Membership Plans"><div>Flexible Membership Plans</div><div className="collapsible_trigger-icon__qgUgb"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="3.2rem" height="3.2rem" style="transform:rotate(0deg);transition:transform 0.3s ease-in-out"><path fill="currentColor" d="M21 12a.75.75 0 0 1-.75.75h-7.5v7.5a.75.75 0 1 1-1.5 0v-7.5h-7.5a.75.75 0 1 1 0-1.5h7.5v-7.5a.75.75 0 1 1 1.5 0v7.5h7.5A.75.75 0 0 1 21 12"></path></svg></div></div><div data-state="closed" id="radix-_R_1qdbsnn5tjb_" hidden="" className="collapsible_content__3mg0E"></div></div><div data-state="closed" className="collapsible_item__VdUU7"><div className="collapsible_trigger__YVdqC" type="button" aria-controls="radix-_R_2adbsnn5tjb_" aria-expanded="false" data-state="closed" data-index="04" title="Innovative Tools and Technology"><div>Innovative Tools and Technology</div><div className="collapsible_trigger-icon__qgUgb"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="3.2rem" height="3.2rem" style="transform:rotate(0deg);transition:transform 0.3s ease-in-out"><path fill="currentColor" d="M21 12a.75.75 0 0 1-.75.75h-7.5v7.5a.75.75 0 1 1-1.5 0v-7.5h-7.5a.75.75 0 1 1 0-1.5h7.5v-7.5a.75.75 0 1 1 1.5 0v7.5h7.5A.75.75 0 0 1 21 12"></path></svg></div></div><div data-state="closed" id="radix-_R_2adbsnn5tjb_" hidden="" className="collapsible_content__3mg0E"></div></div></div></div></div></div></section><section className="core-team_wrapper__Za5Fz"><div className="container_container__v5gtR"><div className="core-team_title__2Xew0"><div className="em">Meet the</div>Rootspace Team</div><div className="progress-slider_progress-slider__qK3uB"><div className="swiper progress-slider_slider__vRu_h core-team_slider__ZIFd4"><div className="swiper-wrapper progress-slider_slider-wrapper__Pv7Nu"><div className="swiper-slide progress-slider_slide__DCVGv core-team_slide__3X2ID"><div style="visibility:visible"><div><div className="core-team_list-item-image__6rSj1"><img alt="Adam Mahfouda" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/adam-mahfouda5989.jpg"/></div><div className="core-team_list-item-name__Mdfh1">Adam Mahfouda</div><div className="core-team_list-item-title__8AGHe">Founder and Chief Executive Officer</div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv core-team_slide__3X2ID"><div style="visibility:visible"><div><div className="core-team_list-item-image__6rSj1"><img alt="Jules Borbely" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/jules-borbelyc681.jpg"/></div><div className="core-team_list-item-name__Mdfh1">Jules Borbely</div><div className="core-team_list-item-title__8AGHe">Chief Operating Officer</div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv core-team_slide__3X2ID"><div style="visibility:visible"><div><div className="core-team_list-item-image__6rSj1"><img alt="Dina Tango" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/dina-tango77b3.jpg"/></div><div className="core-team_list-item-name__Mdfh1">Dina Tango</div><div className="core-team_list-item-title__8AGHe">Chief Financial Officer</div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv core-team_slide__3X2ID"><div style="visibility:visible"><div><div className="core-team_list-item-image__6rSj1"><img alt="Molly Concannon" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/molly-concannon5391.jpg"/></div><div className="core-team_list-item-name__Mdfh1">Molly Concannon</div><div className="core-team_list-item-title__8AGHe">Chief of Staff</div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv core-team_slide__3X2ID"><div style="visibility:visible"><div><div className="core-team_list-item-image__6rSj1"><img alt="Christina Alexander" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/christina-alexander6e34.png"/></div><div className="core-team_list-item-name__Mdfh1">Christina Alexander</div><div className="core-team_list-item-title__8AGHe">Agent Success Manager</div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv core-team_slide__3X2ID"><div style="visibility:visible"><div><div className="core-team_list-item-image__6rSj1"><img alt="Jay Khan" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/jay-khan4ad2.png"/></div><div className="core-team_list-item-name__Mdfh1">Jay Khan</div><div className="core-team_list-item-title__8AGHe">Director of Coaching and Agent Development</div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv core-team_slide__3X2ID"><div style="visibility:visible"><div><div className="core-team_list-item-image__6rSj1"><img alt="Jamie Sittner" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/jamie-sittner5f9a.png"/></div><div className="core-team_list-item-name__Mdfh1">Jamie Sittner</div><div className="core-team_list-item-title__8AGHe">Team Leader - Ballston Spa</div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv core-team_slide__3X2ID"><div style="visibility:visible"><div><div className="core-team_list-item-image__6rSj1"><img alt="Casey Gaddy" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/casey-gaddy5ee1.png"/></div><div className="core-team_list-item-name__Mdfh1">Casey Gaddy</div><div className="core-team_list-item-title__8AGHe">Pennsylvania Regional Manager &amp; Broker</div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv core-team_slide__3X2ID"><div style="visibility:visible"><div><div className="core-team_list-item-image__6rSj1"><img alt="Dimitar Nikolov" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/dimitar-nikolovf049.png"/></div><div className="core-team_list-item-name__Mdfh1">Dimitar Nikolov</div><div className="core-team_list-item-title__8AGHe">Founding Partner</div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv core-team_slide__3X2ID"><div style="visibility:visible"><div><div className="core-team_list-item-image__6rSj1"><img alt="Edon Mustafa" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/edon-mustafafbf5.png"/></div><div className="core-team_list-item-name__Mdfh1">Edon Mustafa</div><div className="core-team_list-item-title__8AGHe">Chief Technology Officer</div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv core-team_slide__3X2ID"><div style="visibility:visible"><div><div className="core-team_list-item-image__6rSj1"><img alt="Erisa Jakupi-Voca" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/erisa-jakupi-voca6d3b.png"/></div><div className="core-team_list-item-name__Mdfh1">Erisa Jakupi-Voca</div><div className="core-team_list-item-title__8AGHe">Director of Growth</div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv core-team_slide__3X2ID"><div style="visibility:visible"><div><div className="core-team_list-item-image__6rSj1"><img alt="Adea Fejza" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/adea-fejzafad2.png"/></div><div className="core-team_list-item-name__Mdfh1">Adea Fejza</div><div className="core-team_list-item-title__8AGHe">Assistant Coordinator</div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv core-team_slide__3X2ID"><div style="visibility:visible"><div><div className="core-team_list-item-image__6rSj1"><img alt="Agnesa Eshrefi" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/agnesa-eshreficea1.png"/></div><div className="core-team_list-item-name__Mdfh1">Agnesa Eshrefi</div><div className="core-team_list-item-title__8AGHe">Accounting Assistant</div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv core-team_slide__3X2ID"><div style="visibility:visible"><div><div className="core-team_list-item-image__6rSj1"><img alt="Albina Ibrahimi" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/albina-ibrahimi95c3.png"/></div><div className="core-team_list-item-name__Mdfh1">Albina Ibrahimi</div><div className="core-team_list-item-title__8AGHe">Executive Assistant</div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv core-team_slide__3X2ID"><div style="visibility:visible"><div><div className="core-team_list-item-image__6rSj1"><img alt="Albina Maliqi" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/albina-maliqi97f9.png"/></div><div className="core-team_list-item-name__Mdfh1">Albina Maliqi</div><div className="core-team_list-item-title__8AGHe">Agent Support</div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv core-team_slide__3X2ID"><div style="visibility:visible"><div><div className="core-team_list-item-image__6rSj1"><img alt="Albinot Blakcorri" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/albinot-blakcorri4a36.png"/></div><div className="core-team_list-item-name__Mdfh1">Albinot Blakcorri</div><div className="core-team_list-item-title__8AGHe">Executive Assistant</div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv core-team_slide__3X2ID"><div style="visibility:visible"><div><div className="core-team_list-item-image__6rSj1"><img alt="Dardan Sokoli" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/dardan-sokoliabf1.png"/></div><div className="core-team_list-item-name__Mdfh1">Dardan Sokoli</div><div className="core-team_list-item-title__8AGHe">Agent Support</div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv core-team_slide__3X2ID"><div style="visibility:visible"><div><div className="core-team_list-item-image__6rSj1"><img alt="Diellza Salicana" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/diellza-salicana9ca5.png"/></div><div className="core-team_list-item-name__Mdfh1">Diellza Salicana</div><div className="core-team_list-item-title__8AGHe">Accounting Assistant</div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv core-team_slide__3X2ID"><div style="visibility:visible"><div><div className="core-team_list-item-image__6rSj1"><img alt="Emona Shehu" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/emona-shehucb3e.png"/></div><div className="core-team_list-item-name__Mdfh1">Emona Shehu</div><div className="core-team_list-item-title__8AGHe">Senior Executive Assistant to the COO</div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv core-team_slide__3X2ID"><div style="visibility:visible"><div><div className="core-team_list-item-image__6rSj1"><img alt="Erëza Begu" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/erza-begu1022.png"/></div><div className="core-team_list-item-name__Mdfh1">Erëza Begu</div><div className="core-team_list-item-title__8AGHe">Frontend Engineer</div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv core-team_slide__3X2ID"><div style="visibility:visible"><div><div className="core-team_list-item-image__6rSj1"><img alt="Florent Kuçi" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/florent-kuci7a1e.png"/></div><div className="core-team_list-item-name__Mdfh1">Florent Kuçi</div><div className="core-team_list-item-title__8AGHe">Senior Executive Assistant to the COO</div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv core-team_slide__3X2ID"><div style="visibility:visible"><div><div className="core-team_list-item-image__6rSj1"><img alt="Genita Rexhepi" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/genita-rexhepi3dc3.png"/></div><div className="core-team_list-item-name__Mdfh1">Genita Rexhepi</div><div className="core-team_list-item-title__8AGHe">Property Data Management &amp; Project Manager</div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv core-team_slide__3X2ID"><div style="visibility:visible"><div><div className="core-team_list-item-image__6rSj1"><img alt="Gresa Leci" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/gresa-lecif7e0.png"/></div><div className="core-team_list-item-name__Mdfh1">Gresa Leci</div><div className="core-team_list-item-title__8AGHe">Executive Assistant at The Empire Team</div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv core-team_slide__3X2ID"><div style="visibility:visible"><div><div className="core-team_list-item-image__6rSj1"><img alt="Pellumb Hajdari" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/pellumb-hajdarif219.png"/></div><div className="core-team_list-item-name__Mdfh1">Pellumb Hajdari</div><div className="core-team_list-item-title__8AGHe">Graphic Designer</div></div></div></div></div><div className="swiper-scrollbar"></div></div><div className="core-team_slider-controls-wrapper__gUgRj slider-controls_controls__x_E7P"><div className="slider-counter_wrapper__1Cp5s"><div className="slider-counter_value-container___sVAa"><div className="slider-counter_placeholder__d2mbp">00</div><div className="slider-counter_value__lz2PU">01</div></div><div className="slider-counter_total__TU5Lh">24</div></div><div className="slider-navigation_wrapper__anFWO"><div className="slider-navigation_left__fRvU3"><button className="button_icon-button__pp9M4 button_color-primary__JJ7Hh" disabled=""><div className="button_content__6Zh3n"><div className="button_content-icon__uRCIq"><div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="m20.78 12.531-6.75 6.75a.75.75 0 1 1-1.06-1.061l5.47-5.47H3.75a.75.75 0 1 1 0-1.5h14.69l-5.47-5.469a.75.75 0 1 1 1.06-1.061l6.75 6.75a.75.75 0 0 1 0 1.061"></path></svg></div><div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="m20.78 12.531-6.75 6.75a.75.75 0 1 1-1.06-1.061l5.47-5.47H3.75a.75.75 0 1 1 0-1.5h14.69l-5.47-5.469a.75.75 0 1 1 1.06-1.061l6.75 6.75a.75.75 0 0 1 0 1.061"></path></svg></div></div></div></button></div><div><button className="button_icon-button__pp9M4 button_color-primary__JJ7Hh"><div className="button_content__6Zh3n"><div className="button_content-icon__uRCIq"><div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="m20.78 12.531-6.75 6.75a.75.75 0 1 1-1.06-1.061l5.47-5.47H3.75a.75.75 0 1 1 0-1.5h14.69l-5.47-5.469a.75.75 0 1 1 1.06-1.061l6.75 6.75a.75.75 0 0 1 0 1.061"></path></svg></div><div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="m20.78 12.531-6.75 6.75a.75.75 0 1 1-1.06-1.061l5.47-5.47H3.75a.75.75 0 1 1 0-1.5h14.69l-5.47-5.469a.75.75 0 1 1 1.06-1.061l6.75 6.75a.75.75 0 0 1 0 1.061"></path></svg></div></div></div></button></div></div></div></div></div></section><section className="about-page_join__45Yjv"><div className="container_container__v5gtR"><div className="about-page_join-img__W6WuA"><video src="/videos/find-about-2.mp4" loop="" autoPlay="" muted="" playsInline=""></video></div><div className="about-page_join-text__wWcbf">Our team is as diverse as our clients and as driven as our mission. From experienced agents and support staff to forward-thinking leaders, <span className="em">everyone at Rootspace is united in creating meaningful real estate experiences.</span></div><div className="about-page_join-controls__Go1uN"><a className="button_button-round__TFjlU button_color-primary__JJ7Hh" href="/certified-agents"><div className="button_content__6Zh3n"><div className="button_button-round-text__IEwW5"><span data-text="Learn More About Our Agents">Learn More About Our Agents</span></div><span className="button_icon-after__vljdM"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="m20.78 12.531-6.75 6.75a.75.75 0 1 1-1.06-1.061l5.47-5.47H3.75a.75.75 0 1 1 0-1.5h14.69l-5.47-5.469a.75.75 0 1 1 1.06-1.061l6.75 6.75a.75.75 0 0 1 0 1.061"></path></svg></span></div></a><a className="button_button-round__TFjlU button_color-secondary__FZDOG" href="/join"><div className="button_content__6Zh3n"><div className="button_button-round-text__IEwW5"><span data-text="Join Our Team">Join Our Team</span></div><span className="button_icon-after__vljdM"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="m20.78 12.531-6.75 6.75a.75.75 0 1 1-1.06-1.061l5.47-5.47H3.75a.75.75 0 1 1 0-1.5h14.69l-5.47-5.469a.75.75 0 1 1 1.06-1.061l6.75 6.75a.75.75 0 0 1 0 1.061"></path></svg></span></div></a></div></div></section><section className="about-page_core-values__hV28T"><div><div className="core-values_core-values-title__CIJMF"><h2><span className="em">Our</span> Core Values</h2></div><div className="core-values_core-values-description__JAxDa">Rootspace-certified agents embody the core values that define our company:</div><div className="core-values_core-values-slides__IFlhH"><div className="core-values-slides_wrapper__AQMSC"><div className="core-values-slides_slide__a7k_5"><div className="core-values-slides_img-wrapper__gWg1J"><img alt="Positive Culture" loading="lazy" width="2120" height="1414" decoding="async={true}" data-nimg="1" style="color:transparent" src="/assets/556853ffc29cc366e1542d9cabf2d713f01a5d33e7df.jpg"/></div><div className="core-values-slides_content__nPYPx"><div className="core-values-slides_title__nLzex">Positive Culture</div><div style="width:100%;overflow:hidden={true}"><div className="core-values-slides_description__QXUOE">Creating a fun, supportive, and enjoyable environment.</div></div></div></div><div className="core-values-slides_slide__a7k_5"><div className="core-values-slides_img-wrapper__gWg1J"><img alt="Honesty and Integrity" loading="lazy" width="2119" height="1414" decoding="async={true}" data-nimg="1" style="color:transparent" src="/assets/22066e07d6fde7fcc460f643ff71db942e26eae65a98.jpg"/></div><div className="core-values-slides_content__nPYPx"><div className="core-values-slides_title__nLzex">Honesty and Integrity</div><div style="width:100%;overflow:hidden={true}"><div className="core-values-slides_description__QXUOE">Doing the right thing, even when no one is watching.</div></div></div></div><div className="core-values-slides_slide__a7k_5"><div className="core-values-slides_img-wrapper__gWg1J"><img alt="Respect and Empathy" loading="lazy" width="2120" height="1414" decoding="async={true}" data-nimg="1" style="color:transparent" src="/assets/f117144b5c18b9a4b3d626f72d2de0d497536967d1a6.jpg"/></div><div className="core-values-slides_content__nPYPx"><div className="core-values-slides_title__nLzex">Respect and Empathy</div><div style="width:100%;overflow:hidden={true}"><div className="core-values-slides_description__QXUOE">Treating everyone with kindness, understanding, and genuine care.</div></div></div></div><div className="core-values-slides_slide__a7k_5"><div className="core-values-slides_img-wrapper__gWg1J"><img alt="Embracing Change" loading="lazy" width="2120" height="1414" decoding="async={true}" data-nimg="1" style="color:transparent" src="/assets/64dcd3d9d50f331b4653a167aa241a606371cd22e047.jpg"/></div><div className="core-values-slides_content__nPYPx"><div className="core-values-slides_title__nLzex">Embracing Change</div><div style="width:100%;overflow:hidden={true}"><div className="core-values-slides_description__QXUOE">Staying flexible, forward-thinking, and open to new possibilities.</div></div></div></div><div className="core-values-slides_slide__a7k_5"><div className="core-values-slides_img-wrapper__gWg1J"><img alt="Exceptional Service" loading="lazy" width="2120" height="1414" decoding="async={true}" data-nimg="1" style="color:transparent" src="/assets/8800b14f1fb6ef7026605c1b44222820b61276ce884c.jpg"/></div><div className="core-values-slides_content__nPYPx"><div className="core-values-slides_title__nLzex">Exceptional Service</div><div style="width:100%;overflow:hidden={true}"><div className="core-values-slides_description__QXUOE">Going above and beyond to deliver value, consistency, and care in every interaction.</div></div></div></div></div></div></div></section></div>`;
+const stats = [
+  { value: '10,000+', label: 'sq ft of workspace' },
+  { value: '200+', label: 'active members' },
+  { value: '4', label: 'workspace types' },
+  { value: '24/7', label: 'security & access' },
+];
+
+const values = [
+  {
+    emoji: '⚡',
+    title: 'Energy & Focus',
+    desc: 'We design every corner to eliminate distractions and amplify deep work — because your best ideas deserve the best environment.',
+  },
+  {
+    emoji: '🤝',
+    title: 'Community First',
+    desc: "Rootspace is more than desks and chairs. It's a thriving community of founders, freelancers, and teams who grow together.",
+  },
+  {
+    emoji: '🌱',
+    title: 'Growth Mindset',
+    desc: 'From startup to scale-up, our flexible plans grow with you — no lock-ins, no overhead, just momentum.',
+  },
+  {
+    emoji: '✨',
+    title: 'Premium Without the Price',
+    desc: 'High-speed internet, PS5 gaming, unlimited coffee, conference rooms — premium amenities at a fraction of the traditional office cost.',
+  },
+];
+
+const team = [
+  { name: 'Arjun Sharma', role: 'Founder & CEO', img: null },
+  { name: 'Priya Verma', role: 'Head of Operations', img: null },
+  { name: 'Rahul Gupta', role: 'Community Manager', img: null },
+];
 
 export default function About() {
   return (
-    <MainLayout>
-      <div dangerouslySetInnerHTML={{__html: html}} />
+    <MainLayout headerColor="white">
+      {/* Banner */}
+      <section style={{
+        background: 'linear-gradient(135deg, #0e0e10 0%, #151717 100%)',
+        color: '#fff',
+        padding: '14rem 0 10rem',
+        position: 'relative',
+        overflow: 'hidden',
+      }}>
+        <div style={{
+          position: 'absolute',
+          inset: 0,
+          backgroundImage: 'radial-gradient(circle at 20% 30%, rgba(255,255,255,0.04) 0 1px, transparent 1.4px), radial-gradient(circle at 78% 64%, rgba(255,255,255,0.03) 0 1px, transparent 1.6px)',
+          backgroundSize: '9px 9px, 14px 14px',
+          pointerEvents: 'none',
+        }} />
+        <div className="container_container__v5gtR" style={{ position: 'relative', zIndex: 1 }}>
+          <div style={{ maxWidth: '72rem' }}>
+            <div style={{ color: 'rgba(255,255,255,0.45)', fontSize: '1.35rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '2rem' }}>
+              About Rootspace
+            </div>
+            <h1 style={{
+              margin: 0,
+              fontSize: 'clamp(4.8rem, 8vw, 10rem)',
+              fontWeight: 800,
+              lineHeight: 0.95,
+              letterSpacing: '-0.02em',
+              fontFamily: "'Helvetica Now Display', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+            }}>
+              Where Bhopal<br />
+              <span style={{ color: 'rgba(255,255,255,0.42)' }}>comes to work.</span>
+            </h1>
+            <p style={{
+              marginTop: '3.2rem',
+              fontSize: 'clamp(1.8rem, 1.6vw, 2.2rem)',
+              fontWeight: 500,
+              lineHeight: 1.55,
+              color: 'rgba(255,255,255,0.78)',
+              maxWidth: '52rem',
+            }}>
+              Rootspace is Bhopal's largest and most vibrant co-working space — built for freelancers, startups, and businesses who want to work smarter, grow faster, and connect deeper.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats */}
+      <section style={{ background: '#fff', padding: '8rem 0', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
+        <div className="container_container__v5gtR">
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(18rem, 1fr))',
+            gap: '4rem',
+          }}>
+            {stats.map(s => (
+              <div key={s.label}>
+                <div style={{
+                  fontSize: 'clamp(4rem, 5vw, 6.4rem)',
+                  fontWeight: 800,
+                  lineHeight: 1,
+                  letterSpacing: '-0.02em',
+                  fontFamily: "'Helvetica Now Display', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+                  color: '#151717',
+                }}>
+                  {s.value}
+                </div>
+                <div style={{ marginTop: '0.8rem', fontSize: '1.6rem', fontWeight: 500, color: 'rgba(0,0,0,0.5)' }}>
+                  {s.label}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Story */}
+      <section style={{ background: '#fff', padding: '10rem 0' }}>
+        <div className="container_container__v5gtR">
+          <div className="about-two-col" style={{
+            display: 'grid',
+            gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1fr)',
+            gap: '8rem',
+            alignItems: 'center',
+          }}>
+            <div>
+              <div style={{ color: 'rgba(0,0,0,0.38)', fontSize: '1.35rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '2rem' }}>
+                Our Story
+              </div>
+              <h2 style={{
+                margin: '0 0 2.4rem',
+                fontSize: 'clamp(3.6rem, 3.6vw, 5.6rem)',
+                fontWeight: 700,
+                lineHeight: 1.08,
+                letterSpacing: '-0.02em',
+                fontFamily: "'Helvetica Now Display', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+              }}>
+                Built for the <br />
+                <span style={{ color: 'rgba(0,0,0,0.3)' }}>builders of Bhopal</span>
+              </h2>
+              <p style={{ fontSize: '1.85rem', lineHeight: 1.6, color: '#444', marginBottom: '2rem' }}>
+                We started Rootspace with one simple belief: people do their best work when their environment inspires them. Bhopal's entrepreneurial spirit was growing fast — but the infrastructure wasn't keeping up.
+              </p>
+              <p style={{ fontSize: '1.85rem', lineHeight: 1.6, color: '#444', marginBottom: '3.2rem' }}>
+                So we built A-46, Manipuram Colony — over 10,000 sq ft of thoughtfully designed workspace in the heart of Bhopal. From a single desk to an executive cabin, Rootspace meets you where you are and scales as you grow.
+              </p>
+              <Link
+                to="/services"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.8rem',
+                  padding: '1.3rem 2.8rem',
+                  borderRadius: '999px',
+                  background: '#151717',
+                  color: '#fff',
+                  fontWeight: 600,
+                  fontSize: '1.55rem',
+                  textDecoration: 'none',
+                  transition: 'transform 200ms, box-shadow 200ms',
+                }}
+                onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 6px 20px rgba(0,0,0,0.2)'; }}
+                onMouseLeave={e => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = 'none'; }}
+              >
+                View Our Plans →
+              </Link>
+            </div>
+
+            <div style={{
+              borderRadius: '2.4rem',
+              overflow: 'hidden',
+              aspectRatio: '4/3',
+              background: '#f0f0f0',
+            }}>
+              <img
+                src="/assets/collage-home/day-01-photo-00770.jpg"
+                alt="Rootspace interior"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Values */}
+      <section style={{
+        background: 'linear-gradient(180deg, #f7f7f7 0%, #fff 100%)',
+        padding: '10rem 0',
+        borderTop: '1px solid rgba(0,0,0,0.06)',
+      }}>
+        <div className="container_container__v5gtR">
+          <div style={{ marginBottom: '6rem' }}>
+            <div style={{ color: 'rgba(0,0,0,0.38)', fontSize: '1.35rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '1.6rem' }}>
+              What We Stand For
+            </div>
+            <h2 style={{
+              margin: 0,
+              fontSize: 'clamp(3.6rem, 4vw, 6rem)',
+              fontWeight: 700,
+              lineHeight: 1.05,
+              letterSpacing: '-0.02em',
+              fontFamily: "'Helvetica Now Display', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+              maxWidth: '52rem',
+            }}>
+              Our values shape your workspace.
+            </h2>
+          </div>
+
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(26rem, 1fr))',
+            gap: '2.4rem',
+          }}>
+            {values.map(v => (
+              <div
+                key={v.title}
+                style={{
+                  padding: '3.2rem',
+                  borderRadius: '2rem',
+                  background: '#fff',
+                  border: '1px solid rgba(0,0,0,0.08)',
+                  transition: 'box-shadow 250ms ease, transform 250ms ease',
+                }}
+                onMouseEnter={e => { e.currentTarget.style.boxShadow = '0 12px 40px rgba(0,0,0,0.1)'; e.currentTarget.style.transform = 'translateY(-4px)'; }}
+                onMouseLeave={e => { e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'none'; }}
+              >
+                <div style={{ fontSize: '3.2rem', marginBottom: '1.6rem' }}>{v.emoji}</div>
+                <div style={{ fontWeight: 700, fontSize: '2rem', marginBottom: '1rem', letterSpacing: '-0.01em' }}>{v.title}</div>
+                <p style={{ margin: 0, fontSize: '1.65rem', lineHeight: 1.55, color: 'rgba(0,0,0,0.6)' }}>{v.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Video */}
+      <section style={{ background: '#151717', padding: '10rem 0' }}>
+        <div className="container_container__v5gtR">
+          <div className="about-two-col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'center' }}>
+            <div>
+              <h2 style={{
+                margin: '0 0 2.4rem',
+                fontSize: 'clamp(3.6rem, 3.6vw, 5.6rem)',
+                fontWeight: 700,
+                lineHeight: 1.08,
+                letterSpacing: '-0.02em',
+                color: '#fff',
+                fontFamily: "'Helvetica Now Display', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+              }}>
+                See Rootspace in action
+              </h2>
+              <p style={{ fontSize: '1.9rem', lineHeight: 1.55, color: 'rgba(255,255,255,0.65)', marginBottom: '3.2rem' }}>
+                Take a virtual walk through Bhopal's finest co-working space. Designed for focus. Built for community. Ready for you.
+              </p>
+              <a
+                href="#lets-connect"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.8rem',
+                  padding: '1.3rem 2.8rem',
+                  borderRadius: '999px',
+                  background: '#fff',
+                  color: '#151717',
+                  fontWeight: 600,
+                  fontSize: '1.55rem',
+                  textDecoration: 'none',
+                  transition: 'transform 200ms, box-shadow 200ms',
+                }}
+                onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,255,255,0.2)'; }}
+                onMouseLeave={e => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = 'none'; }}
+              >
+                Book a Tour
+              </a>
+            </div>
+            <div style={{ borderRadius: '2rem', overflow: 'hidden', aspectRatio: '16/10', background: '#000' }}>
+              <video
+                src="/videos/why-us.mp4"
+                autoPlay
+                playsInline
+                loop
+                muted
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Banner */}
+      <section style={{
+        background: '#fff',
+        padding: '10rem 0',
+        textAlign: 'center',
+      }}>
+        <div className="container_container__v5gtR">
+          <div style={{ maxWidth: '64rem', margin: '0 auto' }}>
+            <h2 style={{
+              margin: '0 0 2rem',
+              fontSize: 'clamp(4rem, 5vw, 7.2rem)',
+              fontWeight: 800,
+              lineHeight: 1.0,
+              letterSpacing: '-0.02em',
+              fontFamily: "'Helvetica Now Display', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+            }}>
+              Ready to join the Rootspace community?
+            </h2>
+            <p style={{ fontSize: '2rem', lineHeight: 1.5, color: 'rgba(0,0,0,0.55)', marginBottom: '4rem' }}>
+              Start with a free tour — no commitment, no pressure. Just come and see for yourself.
+            </p>
+            <div style={{ display: 'flex', gap: '1.4rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <a
+                href="#lets-connect"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  padding: '1.5rem 3.2rem',
+                  borderRadius: '999px',
+                  background: '#151717',
+                  color: '#fff',
+                  fontWeight: 600,
+                  fontSize: '1.7rem',
+                  textDecoration: 'none',
+                  transition: 'transform 200ms, box-shadow 200ms',
+                }}
+                onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 28px rgba(0,0,0,0.22)'; }}
+                onMouseLeave={e => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = 'none'; }}
+              >
+                Book a Free Tour
+              </a>
+              <Link
+                to="/services"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  padding: '1.5rem 3.2rem',
+                  borderRadius: '999px',
+                  background: 'transparent',
+                  color: '#151717',
+                  fontWeight: 600,
+                  fontSize: '1.7rem',
+                  textDecoration: 'none',
+                  border: '1.5px solid rgba(0,0,0,0.2)',
+                  transition: 'background 200ms, border-color 200ms',
+                }}
+                onMouseEnter={e => { e.currentTarget.style.background = 'rgba(0,0,0,0.04)'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.4)'; }}
+                onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.2)'; }}
+              >
+                Explore Plans
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </MainLayout>
   );
 }

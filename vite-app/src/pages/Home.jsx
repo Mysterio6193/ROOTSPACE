@@ -352,8 +352,20 @@ export default function Home() {
           <div className="hero_content__DK_Ny">
             <div className="container_container__v5gtR">
               <div className="hero_title__JpmHS"><h1>Bhopal's Biggest Co-working Space</h1></div>
-
-
+              <div className="hero-cta-row">
+                <a
+                  href="#lets-connect"
+                  className="hero-cta-primary"
+                >
+                  Book a Free Tour
+                </a>
+                <a
+                  href="/services"
+                  className="hero-cta-secondary"
+                >
+                  View Plans
+                </a>
+              </div>
             </div>
           </div>
         </div>

@@ -1,12 +1,398 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import MainLayout from '../layouts/MainLayout';
 
-const html = `<div><section><div className="hero_wrapper__Wjyix"><div className="container_container__v5gtR"><div><div style="visibility:visible"><div className="hero_title__1qQAi"><h1><div>Your Business,</div><div> Our Expertise</div></h1></div><div className="hero_subtitle__iqDAH">Commercial Real Estate Services</div></div><div className="hero_image__fZBxV" style="visibility:visible"><img alt="" loading="lazy" width="4000" height="2001" decoding="async={true}" data-nimg="1" style="color:transparent;object-fit:cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/4e9ab250c1a86b850ef1dc08987ee1c2e196ef66de18.jpg"/></div><div className="hero_description__vJCt9">Rootspace’s commercial real estate team understands the unique challenges and opportunities in today’s market. Whether you’re looking to lease <span className="em">office space, acquire a retail location, or develop an investment property, we offer the expertise, local knowledge, and innovative approach to help your business thrive.</span></div></div></div></div></section><section><div className="our-services_wrapper__cq_T_"><div className="container_container__v5gtR"><div className="our-services_title__PNO_D"><h2><span className="em">Our</span> Services</h2></div><div className="our-services_items__AI4q_"><div className="our-services_item__hvIa2" data-index="01"><div className="our-services_item-title__cGTCM">Office Leasing</div><div className="our-services_item-description__N1HYQ">Rootspace helps companies secure the right office space—quickly and confidently. From subleases to long-term leases, we handle the search, negotiation, and paperwork so you can stay focused on growing your business.</div></div><div className="our-services_item__hvIa2" data-index="02"><div className="our-services_item-title__cGTCM">Retail Spaces</div><div className="our-services_item-description__N1HYQ">Location matters in retail. We work with you to find high-traffic, strategically positioned properties to enhance your business’s visibility and customer engagement.</div></div><div className="our-services_item__hvIa2" data-index="03"><div className="our-services_item-title__cGTCM">Industrial &amp; Warehouse Properties</div><div className="our-services_item-description__N1HYQ">Our team has extensive experience in industrial real estate, helping you navigate complex logistics and site requirements for warehouses, distribution centers, and more.</div></div><div className="our-services_item__hvIa2" data-index="04"><div className="our-services_item-title__cGTCM">Investment Properties</div><div className="our-services_item-description__N1HYQ">Looking to expand your portfolio? Our experts provide insights into market trends, property valuations, and high-potential investment opportunities to maximize your returns.</div></div><div className="our-services_item__hvIa2" data-index="05"><div className="our-services_item-title__cGTCM">Development &amp; Land Acquisition</div><div className="our-services_item-description__N1HYQ">From land acquisition to property development, Rootspace supports you in every stage of the development process, turning your vision into a profitable reality.</div></div></div></div></div></section><section><div className="why-us_wrapper__6Zclt"><div className="container_container__v5gtR"><div className="why-us_row__ew4RO"><div className="why-us_col__u98Fo"><div className="why-us_label__ZYdx3">Why Rootspace</div><div className="why-us_particle-image__yl8bl" style="visibility:visible"><img alt="Certified Agents Banner" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/empowering-sm4b65.jpg"/></div></div><div className="why-us_col__u98Fo"><div className="why-us_title__jAIg9"><h2><div>Why Choose Rootspace <span className="em">for</span></div><div className="em">Commercial Real Estate?</div></h2></div><div className="why-us_image__HSlbs" style="visibility:visible"><img alt="Certified Agents Banner" loading="lazy" decoding="async={true}" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;object-fit:cover;color:transparent" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/empowering625d.jpg"/></div><div><div className="collapsible_collapsible-mobile__w8_e_"><div className="collapsible_collapsible-mobile__w8_e_"><div className="collapsible_item__VdUU7"><div className="collapsible_trigger__YVdqC" data-index="01"><div>Market Expertise</div></div><div className="collapsible_content__3mg0E"><div className="collapsible_content-inner__D62mz">Our agents have deep-rooted knowledge of local and regional markets, providing you with the insights necessary to make informed, strategic decisions.</div></div></div><div className="collapsible_item__VdUU7"><div className="collapsible_trigger__YVdqC" data-index="02"><div>Tailored Solutions</div></div><div className="collapsible_content__3mg0E"><div className="collapsible_content-inner__D62mz">Every business is unique. We take the time to understand your goals, offering personalized services that align with your objectives, timeline, and budget.</div></div></div><div className="collapsible_item__VdUU7"><div className="collapsible_trigger__YVdqC" data-index="03"><div>Comprehensive Support</div></div><div className="collapsible_content__3mg0E"><div className="collapsible_content-inner__D62mz">From initial search to final lease or sale, our full-service team provides expert guidance at every step, including tenant representation, property management, and transaction support.</div></div></div><div className="collapsible_item__VdUU7"><div className="collapsible_trigger__YVdqC" data-index="04"><div>Data-Driven Insights</div></div><div className="collapsible_content__3mg0E"><div className="collapsible_content-inner__D62mz">We leverage the latest market data and trends to help you assess property potential, identify emerging opportunities, and make well-informed investment choices.</div></div></div></div></div><div className="collapsible_collapsible-desktop__gk0EQ"><div data-state="closed" className="collapsible_item__VdUU7"><div className="collapsible_trigger__YVdqC" type="button" aria-controls="radix-_R_3edbsnn5tjb_" aria-expanded="false" data-state="closed" data-index="01" title="Market Expertise"><div>Market Expertise</div><div className="collapsible_trigger-icon__qgUgb"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="3.2rem" height="3.2rem" style="transform:rotate(0deg);transition:transform 0.3s ease-in-out"><path fill="currentColor" d="M21 12a.75.75 0 0 1-.75.75h-7.5v7.5a.75.75 0 1 1-1.5 0v-7.5h-7.5a.75.75 0 1 1 0-1.5h7.5v-7.5a.75.75 0 1 1 1.5 0v7.5h7.5A.75.75 0 0 1 21 12"></path></svg></div></div><div data-state="closed" id="radix-_R_3edbsnn5tjb_" hidden="" className="collapsible_content__3mg0E"></div></div><div data-state="closed" className="collapsible_item__VdUU7"><div className="collapsible_trigger__YVdqC" type="button" aria-controls="radix-_R_5edbsnn5tjb_" aria-expanded="false" data-state="closed" data-index="02" title="Tailored Solutions"><div>Tailored Solutions</div><div className="collapsible_trigger-icon__qgUgb"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="3.2rem" height="3.2rem" style="transform:rotate(0deg);transition:transform 0.3s ease-in-out"><path fill="currentColor" d="M21 12a.75.75 0 0 1-.75.75h-7.5v7.5a.75.75 0 1 1-1.5 0v-7.5h-7.5a.75.75 0 1 1 0-1.5h7.5v-7.5a.75.75 0 1 1 1.5 0v7.5h7.5A.75.75 0 0 1 21 12"></path></svg></div></div><div data-state="closed" id="radix-_R_5edbsnn5tjb_" hidden="" className="collapsible_content__3mg0E"></div></div><div data-state="closed" className="collapsible_item__VdUU7"><div className="collapsible_trigger__YVdqC" type="button" aria-controls="radix-_R_7edbsnn5tjb_" aria-expanded="false" data-state="closed" data-index="03" title="Comprehensive Support"><div>Comprehensive Support</div><div className="collapsible_trigger-icon__qgUgb"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="3.2rem" height="3.2rem" style="transform:rotate(0deg);transition:transform 0.3s ease-in-out"><path fill="currentColor" d="M21 12a.75.75 0 0 1-.75.75h-7.5v7.5a.75.75 0 1 1-1.5 0v-7.5h-7.5a.75.75 0 1 1 0-1.5h7.5v-7.5a.75.75 0 1 1 1.5 0v7.5h7.5A.75.75 0 0 1 21 12"></path></svg></div></div><div data-state="closed" id="radix-_R_7edbsnn5tjb_" hidden="" className="collapsible_content__3mg0E"></div></div><div data-state="closed" className="collapsible_item__VdUU7"><div className="collapsible_trigger__YVdqC" type="button" aria-controls="radix-_R_9edbsnn5tjb_" aria-expanded="false" data-state="closed" data-index="04" title="Data-Driven Insights"><div>Data-Driven Insights</div><div className="collapsible_trigger-icon__qgUgb"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="3.2rem" height="3.2rem" style="transform:rotate(0deg);transition:transform 0.3s ease-in-out"><path fill="currentColor" d="M21 12a.75.75 0 0 1-.75.75h-7.5v7.5a.75.75 0 1 1-1.5 0v-7.5h-7.5a.75.75 0 1 1 0-1.5h7.5v-7.5a.75.75 0 1 1 1.5 0v7.5h7.5A.75.75 0 0 1 21 12"></path></svg></div></div><div data-state="closed" id="radix-_R_9edbsnn5tjb_" hidden="" className="collapsible_content__3mg0E"></div></div></div></div></div></div></div></div></section><section><div className="discover_wrapper__7Wsou"><div className="container_container__v5gtR"><div className="discover_row__7l3WM"><div className="discover_col__YK6LA"><div className="discover_title__AFeeW"><h2><div>Discover</div><div className="em">Your Perfect</div><div className="em">Property</div></h2></div></div><div className="discover_col__YK6LA"><div className="discover_description__Tg_wE">Explore a curated selection of commercial listings that meet the highest standards in location, design, and functionality. Whether you’re expanding your business or investing, Rootspace’s featured properties offer prime opportunities.</div><div className="discover_controls__0SCtB"><a className="button_button-round__TFjlU button_color-primary__JJ7Hh" href="/search"><div className="button_content__6Zh3n"><div className="button_button-round-text__IEwW5"><span data-text="View Listings">View Listings</span></div></div></a><button type="button" className="button_button-round__TFjlU button_color-secondary__FZDOG" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-_R_59hbsnn5tjb_" data-state="closed"><div className="button_content__6Zh3n"><div className="button_button-round-text__IEwW5"><span data-text="Contact an Agent for Details">Contact an Agent for Details</span></div></div></button></div></div></div><div className="progress-slider_progress-slider__qK3uB"><div className="swiper progress-slider_slider__vRu_h discover_slider__LAt3V"><div className="swiper-wrapper discover_slider-wrapper__omBXP progress-slider_slider-wrapper__Pv7Nu"><div className="swiper-slide progress-slider_slide__DCVGv discover_slide__pJ1z3"><div style="visibility:visible"><div className="discover_card__Ddk_m"><div className="discover_card-image__hiiEH"><div className="image_container__RA4p4"><img alt="123 Main St, Anytown, USA" width="2120" height="1416" className="image_image__xwoGQ image_lazy__jTV8A" fetchPriority="low"/><div className="image_placeholder__lcbHH"></div></div></div><div className="discover_card-content__K_H6s"><div className="discover_card-address__5jxjZ">123 Main St, Anytown, USA</div><div className="discover_card-pills__dUpzt"><div className="discover_card-pill__SHsFm"><span>2 bed</span>, <span>2 bath</span></div><div className="discover_card-pill__SHsFm">$4,199</div><div className="discover_card-pill__SHsFm">For Sale</div></div></div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv discover_slide__pJ1z3"><div style="visibility:visible"><div className="discover_card__Ddk_m"><div className="discover_card-image__hiiEH"><div className="image_container__RA4p4"><img alt="123 Main St, Anytown, USA" width="1400" height="933" className="image_image__xwoGQ image_lazy__jTV8A" fetchPriority="low"/><div className="image_placeholder__lcbHH"></div></div></div><div className="discover_card-content__K_H6s"><div className="discover_card-address__5jxjZ">123 Main St, Anytown, USA</div><div className="discover_card-pills__dUpzt"><div className="discover_card-pill__SHsFm"><span>2 bed</span>, <span>2 bath</span></div><div className="discover_card-pill__SHsFm">$5,600</div><div className="discover_card-pill__SHsFm">For Sale</div></div></div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv discover_slide__pJ1z3"><div style="visibility:visible"><div className="discover_card__Ddk_m"><div className="discover_card-image__hiiEH"><div className="image_container__RA4p4"><img alt="123 Main St, Anytown, USA" width="700" height="800" className="image_image__xwoGQ image_lazy__jTV8A" fetchPriority="low"/><div className="image_placeholder__lcbHH"></div></div></div><div className="discover_card-content__K_H6s"><div className="discover_card-address__5jxjZ">123 Main St, Anytown, USA</div><div className="discover_card-pills__dUpzt"><div className="discover_card-pill__SHsFm"><span>2 bed</span>, <span>2 bath</span></div><div className="discover_card-pill__SHsFm">$2,800</div><div className="discover_card-pill__SHsFm">For Sale</div></div></div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv discover_slide__pJ1z3"><div style="visibility:visible"><div className="discover_card__Ddk_m"><div className="discover_card-image__hiiEH"><div className="image_container__RA4p4"><img alt="123 Main St, Anytown, USA" width="2000" height="1333" className="image_image__xwoGQ image_lazy__jTV8A" fetchPriority="low"/><div className="image_placeholder__lcbHH"></div></div></div><div className="discover_card-content__K_H6s"><div className="discover_card-address__5jxjZ">123 Main St, Anytown, USA</div><div className="discover_card-pills__dUpzt"><div className="discover_card-pill__SHsFm"><span>2 bed</span>, <span>2 bath</span></div><div className="discover_card-pill__SHsFm">$3,400</div><div className="discover_card-pill__SHsFm">For Sale</div></div></div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv discover_slide__pJ1z3"><div style="visibility:visible"><div className="discover_card__Ddk_m"><div className="discover_card-image__hiiEH"><div className="image_container__RA4p4"><img alt="123 Main St, Anytown, USA" width="1152" height="768" className="image_image__xwoGQ image_lazy__jTV8A" fetchPriority="low"/><div className="image_placeholder__lcbHH"></div></div></div><div className="discover_card-content__K_H6s"><div className="discover_card-address__5jxjZ">123 Main St, Anytown, USA</div><div className="discover_card-pills__dUpzt"><div className="discover_card-pill__SHsFm"><span>2 bed</span>, <span>2 bath</span></div><div className="discover_card-pill__SHsFm">$3,900</div><div className="discover_card-pill__SHsFm">For Sale</div></div></div></div></div></div><div className="swiper-slide progress-slider_slide__DCVGv discover_slide__pJ1z3"><div style="visibility:visible"><div className="discover_card__Ddk_m"><div className="discover_card-image__hiiEH"><div className="image_container__RA4p4"><img alt="123 Main St, Anytown, USA" width="736" height="552" className="image_image__xwoGQ image_lazy__jTV8A" fetchPriority="low"/><div className="image_placeholder__lcbHH"></div></div></div><div className="discover_card-content__K_H6s"><div className="discover_card-address__5jxjZ">123 Main St, Anytown, USA</div><div className="discover_card-pills__dUpzt"><div className="discover_card-pill__SHsFm"><span>2 bed</span>, <span>2 bath</span></div><div className="discover_card-pill__SHsFm">$4,500</div><div className="discover_card-pill__SHsFm">For Sale</div></div></div></div></div></div></div><div className="swiper-scrollbar"></div></div></div></div></div></section><section><div className="stories_wrapper__e9zpl"><div className="container_container__v5gtR"><div className="stories_head__0zAph"><div className="stories_title__zrol7"><h2><div className="em">Client</div><div>Success Stories</div></h2></div><div className="stories_description__MDOmQ">Our clients’ success speaks for itself. See how Rootspace has helped businesses and investors achieve their commercial real estate goals.</div></div><div className="stories_separator__r0Xtm"></div><div className="stories_controls__Dh8Uj"><div className="stories_pagination__rC5A2"><button className="stories_pagination-item__T_5y1 stories_active__ueV3c"><div className="stories_pagination-item-text__L00fh"><span data-text="1">1</span></div></button><button className="stories_pagination-item__T_5y1"><div className="stories_pagination-item-text__L00fh"><span data-text="2">2</span></div></button><button className="stories_pagination-item__T_5y1"><div className="stories_pagination-item-text__L00fh"><span data-text="3">3</span></div></button></div><div className="stories_quotes__jq3Yb"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 49 49"><path fill="currentColor" d="M10.72 20.9.16 10.34 10.72 0l10.34 10.34L1.48 48.4.16 47.08zm27.94 0L28.1 10.34 38.66 0 49 10.34 29.42 48.4l-1.32-1.32z"></path></svg></div></div><div className="stories_stories__8y6Jk"><div className="stories_story__E2Eiv stories_active__ueV3c"><div className="stories_story-text__ePk7q">Working with Rootspace has been an incredible experience. The flexibility to manage my schedule combined with the team’s unwavering support has given me the confidence to close deals and deliver exceptional results for my clients.</div><div className="stories_author__mESpp"><div className="stories_author-image__1Q0pL"><span className="avatar_avatar-root__U9Qir"></span></div><div className="stories_author-info__xvYh8"><div className="stories_author-name__dJeSu">Robert Adams</div><div className="stories_author-role__UUGO6">Lead certified agent</div></div></div></div><div className="stories_story__E2Eiv"><div className="stories_story-text__ePk7q">A great experience with Rootspace. The team was very helpful and supportive. I was able to close deals and deliver exceptional results for my clients.</div><div className="stories_author__mESpp"><div className="stories_author-image__1Q0pL"><span className="avatar_avatar-root__U9Qir"></span></div><div className="stories_author-info__xvYh8"><div className="stories_author-name__dJeSu">John Doe</div><div className="stories_author-role__UUGO6">Lead certified agent</div></div></div></div><div className="stories_story__E2Eiv"><div className="stories_story-text__ePk7q">I had a great experience with Rootspace. The team was very helpful and supportive. I was able to close deals and deliver exceptional results for my clients.</div><div className="stories_author__mESpp"><div className="stories_author-image__1Q0pL"><span className="avatar_avatar-root__U9Qir"></span></div><div className="stories_author-info__xvYh8"><div className="stories_author-name__dJeSu">Jane Smith</div><div className="stories_author-role__UUGO6">Lead certified agent</div></div></div></div></div></div></div></section><section><div className="explore_wrapper__FtZ7T"><div className="container_container__v5gtR"><div className="explore_row__LSK4N"><div className="explore_col__LHahM"><div className="explore_image__B959s" style="visibility:visible"><img alt="Explore" loading="lazy" width="1500" height="1099" decoding="async={true}" data-nimg="1" style="color:transparent;object-fit:cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/assets/exploree32c.jpg"/></div></div><div className="explore_col__LHahM"><h2><div className="explore_title__QMxCw"><div>Ready to Explore</div><div className="em">Commercial Real Estate?</div></div></h2><div className="explore_controls__OODD3"><button type="button" className="button_button-round__TFjlU button_color-primary__JJ7Hh button_inversed__slQcI" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-_R_qpbsnn5tjb_" data-state="closed"><div className="button_content__6Zh3n"><div className="button_button-round-text__IEwW5"><span data-text="Get Started">Get Started</span></div><span className="button_icon-after__vljdM"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="m20.78 12.531-6.75 6.75a.75.75 0 1 1-1.06-1.061l5.47-5.47H3.75a.75.75 0 1 1 0-1.5h14.69l-5.47-5.469a.75.75 0 1 1 1.06-1.061l6.75 6.75a.75.75 0 0 1 0 1.061"></path></svg></span></div></button><button type="button" className="button_button-round__TFjlU button_color-secondary__FZDOG button_inversed__slQcI" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-_R_1apbsnn5tjb_" data-state="closed"><div className="button_content__6Zh3n"><div className="button_button-round-text__IEwW5"><span data-text="Speak to an Expert">Speak to an Expert</span></div><span className="button_icon-after__vljdM"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="m20.78 12.531-6.75 6.75a.75.75 0 1 1-1.06-1.061l5.47-5.47H3.75a.75.75 0 1 1 0-1.5h14.69l-5.47-5.469a.75.75 0 1 1 1.06-1.061l6.75 6.75a.75.75 0 0 1 0 1.061"></path></svg></span></div></button></div><div className="explore_description__3FU1T">Our team is here to guide you through every aspect of commercial real estate, from leasing and acquisition to investment <span className="em">and development. Let us help you find the space that fits your business and supports your vision for the future.</span></div></div></div></div></div></section></div>`;
+const plans = [
+  {
+    id: 'common',
+    emoji: '🖥️',
+    title: 'Common Workstation',
+    price: '₹5,000',
+    period: '/month',
+    tagline: 'Flexible, no-commitment seating',
+    color: '#f8f8f8',
+    textColor: '#151717',
+    bullets: [
+      'Clean table and chair',
+      'High-speed internet',
+      'Unlimited coffee & water',
+      'Housekeeping service',
+      'Separate clean washrooms (M/F)',
+      '24/7 security',
+      'Common telecom service',
+    ],
+  },
+  {
+    id: 'dedicated',
+    emoji: '📌',
+    title: 'Dedicated Workstation',
+    price: '₹10,000',
+    period: '/month',
+    tagline: 'Your own reserved desk',
+    highlight: false,
+    color: '#f8f8f8',
+    textColor: '#151717',
+    bullets: [
+      'Dedicated table and chair',
+      'High-speed internet',
+      'Unlimited coffee & water',
+      'Housekeeping service',
+      'Separate clean washrooms (M/F)',
+      '24/7 security',
+      'Common telecom service',
+      'Small storage cabinet',
+      'Free 20 prints/month',
+      'Free PS5 gaming — 5 hrs/month',
+    ],
+  },
+  {
+    id: 'cabin',
+    emoji: '🏠',
+    title: 'Dedicated Cabin',
+    price: '₹20,000',
+    period: '/month',
+    tagline: 'Fully enclosed private space',
+    highlight: true,
+    color: '#151717',
+    textColor: '#fff',
+    bullets: [
+      'Private cabin',
+      'High-speed internet',
+      'Unlimited coffee & water',
+      'Housekeeping service',
+      'Separate clean washrooms (M/F)',
+      '24/7 security',
+      'Dedicated telecom',
+      'Large storage cabinets',
+      'Free 50 prints/month',
+      'Free PS5 gaming — 10 hrs/month',
+      'Common assistant',
+    ],
+  },
+  {
+    id: 'executive',
+    emoji: '👑',
+    title: 'Executive Cabin',
+    price: '₹40,000',
+    period: '/month',
+    tagline: 'The ultimate workspace',
+    color: '#0e0e10',
+    textColor: '#fff',
+    bullets: [
+      'Boss table and chair',
+      'High-speed internet',
+      'Unlimited coffee & water',
+      'Housekeeping service',
+      'Separate clean washrooms (M/F)',
+      '24/7 security',
+      'Dedicated telecom',
+      'Large storage cabinets',
+      'Free 50 prints/month',
+      'Free PS5 gaming — 10 hrs/month',
+      'Common assistant',
+      '2 extra workstations for staff',
+      'Couches and coffee table',
+    ],
+  },
+];
+
+const amenities = [
+  { icon: '⚡', title: 'High-Speed Internet', desc: 'Fibre-optic connectivity that never lets you down during that critical call.' },
+  { icon: '☕', title: 'Unlimited Coffee & Water', desc: 'Fuel your work with freshly brewed coffee and chilled water all day.' },
+  { icon: '🎮', title: 'PS5 Gaming Zone', desc: 'Recharge with gaming sessions — included in Dedicated & above plans.' },
+  { icon: '📋', title: 'Conference Rooms', desc: 'Fully equipped meeting rooms for client presentations and team standups.' },
+  { icon: '📚', title: 'Library Corner', desc: 'A quiet, distraction-free zone for deep focus and reading.' },
+  { icon: '🔒', title: '24/7 Security', desc: 'Round-the-clock CCTV surveillance and secure access control.' },
+  { icon: '🖨️', title: 'Printing & Scanning', desc: 'On-demand printing and scanning available for all members.' },
+  { icon: '🧹', title: 'Daily Housekeeping', desc: 'A clean, fresh workspace every single morning.' },
+];
 
 export default function Services() {
+  const [hovered, setHovered] = useState(null);
+
   return (
-    <MainLayout>
-      <div dangerouslySetInnerHTML={{__html: html}} />
+    <MainLayout headerColor="white">
+      {/* Hero */}
+      <section style={{
+        background: 'linear-gradient(135deg, #0e0e10 0%, #1a1a1c 100%)',
+        color: '#fff',
+        padding: '14rem 0 10rem',
+        position: 'relative',
+        overflow: 'hidden',
+      }}>
+        <div style={{
+          position: 'absolute',
+          inset: 0,
+          backgroundImage: 'radial-gradient(circle at 20% 30%, rgba(255,255,255,0.04) 0 1px, transparent 1.4px), radial-gradient(circle at 80% 65%, rgba(255,255,255,0.03) 0 1px, transparent 1.6px)',
+          backgroundSize: '9px 9px, 14px 14px',
+          pointerEvents: 'none',
+        }} />
+        <div className="container_container__v5gtR" style={{ position: 'relative', zIndex: 1 }}>
+          <div style={{ maxWidth: '72rem' }}>
+            <div style={{ color: 'rgba(255,255,255,0.45)', fontSize: '1.35rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '2rem' }}>
+              Workspace Plans
+            </div>
+            <h1 style={{
+              margin: 0,
+              fontSize: 'clamp(4.8rem, 8vw, 10rem)',
+              fontWeight: 800,
+              lineHeight: 0.95,
+              letterSpacing: '-0.02em',
+              fontFamily: "'Helvetica Now Display', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+            }}>
+              Find your<br />
+              <span style={{ color: 'rgba(255,255,255,0.4)' }}>perfect plan.</span>
+            </h1>
+            <p style={{
+              marginTop: '3.2rem',
+              fontSize: 'clamp(1.8rem, 1.6vw, 2.2rem)',
+              fontWeight: 500,
+              lineHeight: 1.55,
+              color: 'rgba(255,255,255,0.72)',
+              maxWidth: '52rem',
+            }}>
+              Whether you need a hot desk for a day or a private executive cabin for your whole team — Rootspace has a plan that fits.
+            </p>
+            <p style={{ marginTop: '1.6rem', fontSize: '1.5rem', color: 'rgba(255,255,255,0.42)', fontStyle: 'italic' }}>
+              All prices are per person per month. 18% GST additional. Custom quotations available.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Plans */}
+      <section style={{ background: '#f5f5f5', padding: '9rem 0' }}>
+        <div className="container_container__v5gtR">
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(26rem, 1fr))',
+            gap: '2.4rem',
+          }}>
+            {plans.map(plan => (
+              <div
+                key={plan.id}
+                onMouseEnter={() => setHovered(plan.id)}
+                onMouseLeave={() => setHovered(null)}
+                style={{
+                  background: plan.color,
+                  color: plan.textColor,
+                  borderRadius: '2.4rem',
+                  padding: '3.6rem 3.2rem',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  border: plan.highlight ? '2px solid rgba(255,255,255,0.2)' : '1px solid rgba(0,0,0,0.07)',
+                  transition: 'transform 260ms ease, box-shadow 260ms ease',
+                  transform: hovered === plan.id ? 'translateY(-6px) scale(1.01)' : 'none',
+                  boxShadow: hovered === plan.id
+                    ? plan.highlight
+                      ? '0 24px 60px rgba(0,0,0,0.4)'
+                      : '0 16px 48px rgba(0,0,0,0.14)'
+                    : plan.highlight
+                      ? '0 8px 32px rgba(0,0,0,0.24)'
+                      : '0 2px 8px rgba(0,0,0,0.05)',
+                  position: 'relative',
+                  overflow: 'hidden',
+                }}
+              >
+                {plan.highlight && (
+                  <div style={{
+                    position: 'absolute',
+                    top: '1.8rem',
+                    right: '1.8rem',
+                    background: '#fff',
+                    color: '#151717',
+                    fontSize: '1.2rem',
+                    fontWeight: 700,
+                    letterSpacing: '0.06em',
+                    textTransform: 'uppercase',
+                    padding: '0.4rem 1rem',
+                    borderRadius: '999px',
+                  }}>
+                    Popular
+                  </div>
+                )}
+
+                <div style={{ fontSize: '2.8rem', marginBottom: '1.6rem' }}>{plan.emoji}</div>
+                <div style={{
+                  fontSize: '2rem',
+                  fontWeight: 700,
+                  marginBottom: '0.6rem',
+                  fontFamily: "'Helvetica Now Display', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+                }}>
+                  {plan.title}
+                </div>
+                <div style={{
+                  fontSize: '1.45rem',
+                  opacity: plan.textColor === '#fff' ? 0.55 : 0.5,
+                  marginBottom: '2.4rem',
+                }}>
+                  {plan.tagline}
+                </div>
+
+                <div style={{ marginBottom: '3.2rem' }}>
+                  <span style={{
+                    fontSize: 'clamp(3.6rem, 3.5vw, 5rem)',
+                    fontWeight: 800,
+                    lineHeight: 1,
+                    letterSpacing: '-0.02em',
+                    fontFamily: "'Helvetica Now Display', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+                  }}>
+                    {plan.price}
+                  </span>
+                  <span style={{ fontSize: '1.6rem', opacity: 0.55, marginLeft: '0.4rem' }}>
+                    {plan.period}
+                  </span>
+                </div>
+
+                <ul style={{
+                  margin: 0,
+                  padding: 0,
+                  listStyle: 'none',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '0.9rem',
+                  flex: 1,
+                  marginBottom: '3.2rem',
+                }}>
+                  {plan.bullets.map(b => (
+                    <li key={b} style={{
+                      display: 'flex',
+                      alignItems: 'flex-start',
+                      gap: '0.8rem',
+                      fontSize: '1.55rem',
+                      lineHeight: 1.4,
+                      opacity: plan.textColor === '#fff' ? 0.85 : 0.75,
+                    }}>
+                      <span style={{ marginTop: '0.15rem', flexShrink: 0, opacity: 1 }}>✓</span>
+                      {b}
+                    </li>
+                  ))}
+                </ul>
+
+                <a
+                  href="#lets-connect"
+                  style={{
+                    display: 'block',
+                    textAlign: 'center',
+                    padding: '1.3rem 2rem',
+                    borderRadius: '999px',
+                    fontWeight: 600,
+                    fontSize: '1.55rem',
+                    textDecoration: 'none',
+                    transition: 'background 200ms ease, color 200ms ease',
+                    background: plan.textColor === '#fff' ? 'rgba(255,255,255,0.12)' : '#151717',
+                    color: plan.textColor === '#fff' ? '#fff' : '#fff',
+                    border: plan.textColor === '#fff' ? '1px solid rgba(255,255,255,0.24)' : 'none',
+                  }}
+                  onMouseEnter={e => {
+                    e.currentTarget.style.background = plan.textColor === '#fff' ? 'rgba(255,255,255,0.22)' : '#2a2a2a';
+                  }}
+                  onMouseLeave={e => {
+                    e.currentTarget.style.background = plan.textColor === '#fff' ? 'rgba(255,255,255,0.12)' : '#151717';
+                  }}
+                >
+                  Get Started
+                </a>
+              </div>
+            ))}
+          </div>
+
+          <p style={{
+            textAlign: 'center',
+            marginTop: '3.2rem',
+            fontSize: '1.5rem',
+            color: 'rgba(0,0,0,0.45)',
+          }}>
+            Need a custom plan for multiple people or longer duration? <a href="#lets-connect" style={{ color: '#151717', fontWeight: 600 }}>Contact us for a quote →</a>
+          </p>
+        </div>
+      </section>
+
+      {/* Amenities */}
+      <section style={{ background: '#fff', padding: '9rem 0', borderTop: '1px solid rgba(0,0,0,0.06)' }}>
+        <div className="container_container__v5gtR">
+          <div style={{ marginBottom: '6rem' }}>
+            <div style={{ color: 'rgba(0,0,0,0.38)', fontSize: '1.35rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '1.6rem' }}>
+              What's Included
+            </div>
+            <h2 style={{
+              margin: 0,
+              fontSize: 'clamp(3.6rem, 4vw, 6.4rem)',
+              fontWeight: 800,
+              lineHeight: 1.0,
+              letterSpacing: '-0.02em',
+              fontFamily: "'Helvetica Now Display', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+            }}>
+              Every plan comes<br />
+              <span style={{ color: 'rgba(0,0,0,0.3)' }}>fully loaded.</span>
+            </h2>
+          </div>
+
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(24rem, 1fr))',
+            gap: '2rem',
+          }}>
+            {amenities.map(a => (
+              <div key={a.title} style={{
+                padding: '3rem 2.8rem',
+                borderRadius: '1.8rem',
+                background: '#f8f8f8',
+                border: '1px solid rgba(0,0,0,0.06)',
+                transition: 'box-shadow 250ms, transform 250ms',
+              }}
+                onMouseEnter={e => { e.currentTarget.style.boxShadow = '0 8px 30px rgba(0,0,0,0.09)'; e.currentTarget.style.transform = 'translateY(-3px)'; }}
+                onMouseLeave={e => { e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'none'; }}
+              >
+                <div style={{ fontSize: '2.8rem', marginBottom: '1.2rem' }}>{a.icon}</div>
+                <div style={{ fontWeight: 700, fontSize: '1.8rem', marginBottom: '0.8rem', letterSpacing: '-0.01em' }}>{a.title}</div>
+                <p style={{ margin: 0, fontSize: '1.55rem', lineHeight: 1.5, color: 'rgba(0,0,0,0.55)' }}>{a.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section style={{ background: '#151717', padding: '10rem 0', textAlign: 'center' }}>
+        <div className="container_container__v5gtR">
+          <div style={{ maxWidth: '60rem', margin: '0 auto' }}>
+            <h2 style={{
+              margin: '0 0 2rem',
+              fontSize: 'clamp(4rem, 5vw, 7.2rem)',
+              fontWeight: 800,
+              lineHeight: 1.0,
+              letterSpacing: '-0.02em',
+              color: '#fff',
+              fontFamily: "'Helvetica Now Display', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+            }}>
+              Not sure which plan is right?
+            </h2>
+            <p style={{ fontSize: '2rem', lineHeight: 1.5, color: 'rgba(255,255,255,0.55)', marginBottom: '4rem' }}>
+              Come in for a free tour and we'll help you find the perfect fit.
+            </p>
+            <a
+              href="#lets-connect"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                padding: '1.5rem 3.6rem',
+                borderRadius: '999px',
+                background: '#fff',
+                color: '#151717',
+                fontWeight: 700,
+                fontSize: '1.7rem',
+                textDecoration: 'none',
+                transition: 'transform 200ms, box-shadow 200ms',
+              }}
+              onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 28px rgba(255,255,255,0.2)'; }}
+              onMouseLeave={e => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = 'none'; }}
+            >
+              Book a Free Tour
+            </a>
+          </div>
+        </div>
+      </section>
     </MainLayout>
   );
 }

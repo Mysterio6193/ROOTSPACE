@@ -1680,12 +1680,111 @@
   }
 }
 
-/* Header should scroll away with the page, not stay fixed */
+/* Header is now fixed via inline styles; remove old absolute override */
 .header_wrapper__MJ5bn {
-  position: absolute !important;
+  position: fixed !important;
   top: 0;
   left: 0;
   right: 0;
+}
+
+/* Desktop nav — shown on wide screens, hidden on mobile */
+.rs-desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* Mobile hamburger — hidden on desktop */
+.rs-hamburger-mobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .rs-desktop-nav {
+    display: none !important;
+  }
+
+  .rs-hamburger-mobile {
+    display: flex !important;
+  }
+}
+
+/* Push page content below the fixed header on non-transparent headers */
+body {
+  scroll-behavior: smooth;
+}
+
+/* About page two-column layout: single column on mobile */
+@media (max-width: 767px) {
+  .about-two-col {
+    grid-template-columns: 1fr !important;
+    gap: 4rem !important;
+  }
+}
+
+/* Hero CTA buttons */
+.hero-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  margin-top: 3.2rem;
+  flex-wrap: wrap;
+}
+
+.hero-cta-primary,
+.hero-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 1.4rem 3rem;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  transition: transform 220ms ease, box-shadow 220ms ease, background 220ms ease, color 220ms ease;
+  white-space: nowrap;
+}
+
+.hero-cta-primary {
+  background: #151717;
+  color: #fff;
+}
+
+.hero-cta-secondary {
+  background: rgba(255,255,255,0.18);
+  color: #fff;
+  border: 1.5px solid rgba(255,255,255,0.5);
+  backdrop-filter: blur(4px);
+}
+
+.hero-cta-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.28);
+  background: #2a2a2a;
+}
+
+.hero-cta-secondary:hover {
+  transform: translateY(-2px);
+  background: rgba(255,255,255,0.28);
+  border-color: rgba(255,255,255,0.8);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+}
+
+@media (max-width: 767px) {
+  .hero-cta-row {
+    margin-top: 2.4rem;
+    gap: 1.2rem;
+  }
+
+  .hero-cta-primary,
+  .hero-cta-secondary {
+    font-size: 1.55rem;
+    padding: 1.2rem 2.4rem;
+  }
 }
 
 /* Slightly larger section copy */
