@@ -1,3 +1,12 @@
+/* Define the CSS variables that the original Next.js app set via JS at runtime */
+:root {
+  --color-bg: #ffffff;
+  --color-text: #151717;
+  --font-primary: "Instrument Sans", "Instrument Sans Fallback", sans-serif;
+  --font-secondary: "Lora", "Lora Fallback", serif;
+  --scrollbar-width: 0px;
+}
+
 /* Import all original Next.js CSS files from the mirror */
 @import '/css/a463080343a8b988aae6.css';
 @import '/css/a507e9ad223717c5aae6.css';
