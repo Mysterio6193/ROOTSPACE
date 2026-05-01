@@ -35,31 +35,19 @@ ul { list-style: none; }
 @media (min-width: 768px) { .rs-container { padding: 0 4.8rem; } }
 
 /* ── ANIMATIONS ── */
-.rs-hero__content,
+/* Content is always visible; .rs-visible adds a subtle lift when scrolled into view */
 .rs-why__text,
 .rs-why__video,
-.rs-plan-card,
-.rs-gallery__grid {
-  opacity: 0;
-  transform: translateY(3.2rem);
-  transition: opacity 700ms ease, transform 700ms var(--rs-transition);
+.rs-plan-card {
+  transition: opacity 600ms ease, transform 600ms var(--rs-transition);
 }
-.rs-why__video {
-  transform: translateX(3.2rem);
-  transition-delay: 120ms;
-}
-.rs-hero__content.rs-visible,
-.rs-why__text.rs-visible,
-.rs-why__video.rs-visible,
-.rs-plan-card.rs-visible,
-.rs-gallery__grid.rs-visible {
-  opacity: 1;
-  transform: none;
-}
-@media (prefers-reduced-motion: reduce) {
-  .rs-hero__content, .rs-why__text, .rs-why__video, .rs-plan-card, .rs-gallery__grid {
-    opacity: 1; transform: none; transition: none;
-  }
+@media (prefers-reduced-motion: no-preference) {
+  .rs-why__text { opacity: 0.3; transform: translateY(2rem); }
+  .rs-why__video { opacity: 0.3; transform: translateX(2rem); transition-delay: 100ms; }
+  .rs-plan-card { opacity: 0.3; transform: translateY(2rem); }
+  .rs-why__text.rs-visible,
+  .rs-why__video.rs-visible,
+  .rs-plan-card.rs-visible { opacity: 1; transform: none; }
 }
 
 /* ── SHARED BUTTONS ── */

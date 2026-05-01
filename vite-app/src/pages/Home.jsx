@@ -61,7 +61,6 @@ function useInView(threshold = 0.15) {
 }
 
 export default function Home() {
-  const [heroRef, heroInView] = useInView(0);
   const [whyRef, whyInView] = useInView(0.1);
   const [plansRef, plansInView] = useInView(0.05);
   const [galleryRef, galleryInView] = useInView(0.1);
@@ -73,7 +72,6 @@ export default function Home() {
 
       {/* HERO */}
       <section
-        ref={heroRef}
         className="rs-hero"
         style={{ backgroundImage: 'url(/assets/backdd66.jpg)' }}
       >
@@ -81,7 +79,7 @@ export default function Home() {
         <div className="rs-hero__building">
           <img src="/assets/house8df6.png" alt="" aria-hidden="true" />
         </div>
-        <div className={`rs-hero__content${heroInView ? ' rs-visible' : ''}`}>
+        <div className="rs-hero__content">
           <div className="rs-container">
             <p className="rs-hero__eyebrow">Bhopal, Madhya Pradesh</p>
             <h1 className="rs-hero__title">
